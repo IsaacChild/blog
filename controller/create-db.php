@@ -21,4 +21,6 @@ else {
     echo "Database already exists.";
 }
 
+asdfasdf
+
 $connection->close();
