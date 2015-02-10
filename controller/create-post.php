@@ -10,6 +10,13 @@ $connection =  new mysqli($host, $username, $password, $database) ;
  echo "<p>Title: $title</p>";
  echo "<p>Post: $post</p>";
  
- $query = $connection->query("INSERT INTO posts");
+ $query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+         
+ if($query) {
+      echo "<p>Sucessfully inserted post: $title</p>";       
+ }
+ else {
+    echo "<p>$connection->error</p>"; 
+ }
  
  $connection->close();

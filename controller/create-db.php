@@ -20,7 +20,7 @@ if(!$exist) {
 else {
     echo "<p>Database already exists.</p>";
 }
-$query = $connection->query("CREATE TABLE post ("
+$query = $connection->query("CREATE TABLE posts ("
         ."id int(11)  NOT NULL  AUTO_INCREMENT,"
         ."title varchar(225) NOT NULL,"
         ."post text NOT NULL,"
