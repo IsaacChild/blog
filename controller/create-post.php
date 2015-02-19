@@ -14,5 +14,5 @@ require_once(__DIR__ . "/../model/config.php");
       echo "<p>Sucessfully inserted post: $title</p>";       
  }
  else {
-    echo "<p>$_SESSION["connection"]->error</p>"; 
+    echo "<p>" . $_SESSION["connection"]->error . "</p>"; 
  }
